@@ -1,0 +1,42 @@
+.mainBlock {
+    min-height: 100vh;
+    height: 1px;/*bugfix for child with height 100%*/
+    background-color: #b0826e;
+    color: #fff;
+}
+
+.mainContainer {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url("https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+}
+
+.text {
+    width: 40%;
+}
+
+@media (max-width: 767px) {
+    .mainContainer {
+        align-content: center;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .avatar {
+        margin-right: 5%;
+    }
+}

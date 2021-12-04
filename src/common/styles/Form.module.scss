@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 49%;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 459px) {
+    .col {
+        width: 100%;
+    }
+
+    .col:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

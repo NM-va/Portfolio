@@ -1,0 +1,42 @@
+.contactsBlock {
+    background-color: #fff;
+}
+
+.contactsContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContacts {
+    width: 50%;
+}
+
+.contactsInfo {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .formContacts {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

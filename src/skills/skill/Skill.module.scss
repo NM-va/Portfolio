@@ -1,0 +1,31 @@
+.skillsItem {
+    width: 31%;
+    margin: 2% 1%;
+    min-width: 300px;
+    background-color: #f2e9e0;
+    border: 10px solid #fff;
+    padding: 2em;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+@media (max-width: 997px) {
+    .skillsItem {
+        width: 48%;
+    }
+}
+
+@media (max-width: 665px) {
+    .skillsItem {
+        width: 100%;
+    }
+}

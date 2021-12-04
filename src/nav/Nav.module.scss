@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navItem:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navLink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navLink:active {
+    color: #b0826e;
+}
