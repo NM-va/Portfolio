@@ -1,17 +1,27 @@
+@import "../../common/styles/sass/variables";
+
 .projectsItem {
     width: 30%;
     min-width: 200px;
     margin: 2% 1%;
     padding: 20px 20px 35px;
-    background-color: #fff;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .1);
+    background-color: $thirdBg;
+    box-shadow: 0 10px 30px 0 $shadowColor;
     border-radius: 2px;
+
+    @media (max-width: 997px) {
+        width: 48%;
+    }
+
+    @media (max-width: 665px) {
+        width: 100%;
+    }
 }
 
 .icon {
     height: 200px;
     width: 100%;
-    background-color: #fff;
+    background-color: $thirdBg;
 }
 
 .img {
@@ -19,16 +29,4 @@
     height: 230px;
     background-size: cover;
     background-position: 50% 50%;
-}
-
-@media (max-width: 997px) {
-    .projectsItem {
-        width: 48%;
-    }
-}
-
-@media (max-width: 665px) {
-    .projectsItem {
-        width: 100%;
-    }
 }

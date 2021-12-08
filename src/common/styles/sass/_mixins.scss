@@ -1,0 +1,9 @@
+@import "variables";
+
+@mixin h($fontSize, $lineHeight, $marginBottom: 1em, $color: null, $fontWeight: 500) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color: $color;  //optional
+  margin-bottom: $marginBottom;
+}

@@ -1,3 +1,5 @@
+@import "../common/styles/sass/variables";
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -20,8 +22,11 @@
 .navLink {
     display: inline-block;
     text-decoration: none;
-}
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $secondColor;
 
-.navLink:active {
-    color: #b0826e;
+    &:active {
+        color: $thirdBgHover;
+    }
 }

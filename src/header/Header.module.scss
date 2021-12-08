@@ -1,6 +1,17 @@
+@import "../common/styles/sass/variables";
+
 .header {
     height: 80px;
-    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $thirdBg;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }

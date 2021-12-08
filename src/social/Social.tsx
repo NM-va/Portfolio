@@ -1,13 +1,19 @@
 import React from "react";
-import styles from "./Nav.module.css"
+import styles from "./Social.module.scss"
+import {SocialItem} from "./socialItem/SocialItem";
 
-export const Nav = () => {
+// import { Facebook} from 'react-bootstrap-icons';
+// import { Linkedin } from 'react-bootstrap-icons';
+// import { Twitter } from 'react-bootstrap-icons';
+// import { Youtube } from 'react-bootstrap-icons';
+
+export const Social = () => {
     return (
-        <nav className={styles.nav}>
-            <li className={styles.navItem}><a href="">Main</a></li>
-            <li className={styles.navItem}><a href="">Skills</a></li>
-            <li className={styles.navItem}><a href="">Projects</a></li>
-            <li className={styles.navItem}><a href="">Contacts</a></li>
-        </nav>
+        <ul className={styles.social}>
+            <SocialItem nameIcon={"facebook"} />
+            <SocialItem nameIcon={"linkedin2"} />
+            <SocialItem nameIcon={"twitter"} />
+            <SocialItem nameIcon={"youtube"} />
+        </ul>
     );
 }

@@ -1,5 +1,7 @@
+@import "../common/styles/sass/variables";
+
 .contactsBlock {
-    background-color: #fff;
+    background-color: $thirdBg;
 }
 
 .contactsContainer {
@@ -23,6 +25,11 @@
 
 .formContacts {
     width: 50%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .contactsInfo {
@@ -34,9 +41,4 @@
     margin-bottom: 5px;
 }
 
-@media (max-width: 767px) {
-    .formContacts {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
+

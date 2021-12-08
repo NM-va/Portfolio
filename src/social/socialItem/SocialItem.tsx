@@ -1,17 +1,23 @@
 import React from "react";
-import styles from "./Skill.module.css";
+import styles from "./SocialItem.module.scss";
+import {Icon} from "react-bootstrap-icons";
+
 
 type PropsType = {
-    title: string
-    description: string
+    // icon: Icon
+    nameIcon: string
 }
 
-export const Skill = (props: PropsType) => {
+// const setIconComponent = (Icon: Icon) => {
+//     return <Icon color="royalblue" size={20}/>
+// }
+
+export const SocialItem = ({nameIcon}: PropsType) => {
     return (
-        <div className={styles.skillsItem}>
-            <div className={styles.icon}></div>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
-        </div>
+        <li className={styles.socialItem}>
+            <a href="" className={styles.socialLink}>
+                <span className={`icon-${nameIcon}`}></span>
+            </a>
+        </li>
     );
 }

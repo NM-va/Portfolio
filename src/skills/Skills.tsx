@@ -1,16 +1,17 @@
 import React from "react";
-import styles from "./Main.module.css";
-import styleContainer from "../common/styles/Container.module.css"
+import styles from "./Skills.module.scss";
+import styleContainer from "../common/styles/Container.module.scss"
+import {Skill} from "./skill/Skill";
 
-export const Main = () => {
+export const Skills = () => {
     return (
-        <div className={styles.mainBlock}>
-            <div className={`${styleContainer.container} ${styles.container}`}>
-                <div className={styles.avatar}></div>
-                <div className={styles.text}>
-                    <h6>Hello, My name is</h6>
-                    <h1>Nairobi Gadot</h1>
-                    <h4>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. ipsum dolor sit amet, consectetur adipisicing elit. Officiis, soluta.</h4>
+        <div className={`${styles.skillsBlock} section`}>
+            <div className={styleContainer.container}>
+                <h2 className="textCenter">Skills</h2>
+                <div className={styles.skills}>
+                    <Skill title={"Js"} description={"Lorem ipsum dolor sit amet."} nameIcon={"js"} />
+                    <Skill title={"React"} description={"Lorem ipsum dolor sit amet."} nameIcon={"react"} />
+                    <Skill title={"Redux"} description={"Lorem ipsum dolor sit amet."} nameIcon={"redux"} />
                 </div>
             </div>
         </div>

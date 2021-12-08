@@ -1,8 +1,19 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
 .mainBlock {
     min-height: 100vh;
     height: 1px;/*bugfix for child with height 100%*/
-    background-color: #b0826e;
-    color: #fff;
+    background-color: $mainBg;
+    color: $mainColor;
+
+    h4 {
+        font-size: 24px;
+
+        @media (max-width: 1023px) {
+            font-size: 18px;
+        }
+    }
 }
 
 .mainContainer {
@@ -11,32 +22,41 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 867px) {
+        flex-direction: column;
+    }
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background: url("https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size: cover;
+
+    @media (min-width: 868px) {
+        margin-right: 3em;
+    }
+
+
+    @media (max-width: 867px) {
+        margin-bottom: 3em;
+        width: 250px;
+        height: 250px
+    }
+
 }
 
 .text {
-    width: 40%;
-}
-
-@media (max-width: 767px) {
-    .mainContainer {
-        align-content: center;
-    }
-
-    .text {
-        width: 100%;
+    @media (min-width: 868px) {
+        flex-basis: 60%;
+        flex-grow: 1;
     }
 }
 
-@media (min-width: 768px) {
-    .avatar {
-        margin-right: 5%;
-    }
+.btnContainerMain {
+    margin-top: 20px;
 }
+
+

@@ -1,11 +1,14 @@
 import React from "react";
-import styles from "./Header.module.css"
-import {Nav} from "../nav/Nav";
+import styles from "./Footer.module.scss"
+import {Social} from "../social/Social";
+import styleContainer from "../common/styles/Container.module.scss";
 
-export const Header = () => {
+export const Footer = () => {
     return (
-        <div className={styles.header}>
-            <Nav/>
-        </div>
+        <footer className={styles.footer}>
+            <div className={styleContainer.container}>
+                <Social/>
+            </div>
+        </footer>
     );
 }

@@ -1,0 +1,122 @@
+@import "~sanitize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+@import "./common/styles/sass/fonts";
+@import "./common/styles/sass/icons";
+@import "./common/styles/sass/variables";
+@import "./common/styles/sass/mixins";
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+  /*  sans-serif;*/
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $secondColor;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  @include h(72px, 1em, 20px, $mainColor);
+
+  @media (max-width: 1023px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+  }
+}
+
+h2 {
+  @include h(48px, 1.2em, 20px);
+
+
+  @media (max-width: 1023px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  @include h(24px, 1.5em);
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  @include h(18px, 1.5em);
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+h6 {
+  @include h(16px, 1.5em);
+
+  @media (max-width: 1023px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  @media (max-width: 767px) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}

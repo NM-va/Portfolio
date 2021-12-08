@@ -6,18 +6,16 @@
 
 .col {
     width: 49%;
+
+    @media (max-width: 459px) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .item:not(:last-child) {
     margin-bottom: 10px;
-}
-
-@media (max-width: 459px) {
-    .col {
-        width: 100%;
-    }
-
-    .col:not(:last-child) {
-        margin-bottom: 10px;
-    }
 }

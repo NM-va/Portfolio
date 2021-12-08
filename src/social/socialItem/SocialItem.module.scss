@@ -1,13 +1,30 @@
+@import "../../common/styles/sass/variables";
+
 .socialItem {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-
 .socialLink {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
-    background-color: #fff;
+    background-color: $mainColor;
     border-radius: 2px;
+    transition: all .3s;
+    color: $thirdColor;
+
+    &:hover {
+        background: $thirdBgHover;
+        opacity: .9;
+        color: $mainColor;
+        animation: zoom .3s linear;
+    }
+}
+
+@keyframes zoom {
+    50% {transform: scale(1.2);}
+    to {transform: scale(1);}
 }
